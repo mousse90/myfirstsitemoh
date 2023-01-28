@@ -359,3 +359,34 @@ a {
     font-size: 1.7rem;
   }
 }
+
+/*Media*/
+
+.media {
+  display: flex;
+  margin-left: 2rem;
+}
+
+.media-title {
+  margin-top: 0;
+}
+
+.media__image {
+  margin-top: 1rem;
+}
+
+.media__body {
+  margin-left: 2px;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+.media__body .media-title {
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .media {
+    margin-left: 2.5rem;
+  }
+}

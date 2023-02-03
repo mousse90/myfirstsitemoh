@@ -167,6 +167,10 @@ a {
   fill: var(--color-primary);
 }
 
+.icon--white {
+  fill: white;
+}
+
 .icon--primary--white {
   fill: white;
 }
@@ -197,10 +201,18 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
+  outline: 0;
   padding: 2rem 3rem;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap; /*no wrap if we do not have enough space*/
+}
+
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 .btn--primary {
@@ -275,7 +287,7 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1; /*take all the avalaible space*/
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 
 .input-group .btn {
@@ -702,5 +714,37 @@ a {
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+
+/*Domain block*/
+
+.block-domain .input-group {
+  box-shadow: 0 0 40px 20px #e6ebee;
+  border: none;
+  margin: 4rem 0;
+}
+
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 6rem);
+  justify-items: center;
+  font-weight: 550;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain.container {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  .block-domain__prices {
+    display: flex;
+    justify-content: center;
+  }
+
+  .block-domain__prices li {
+    margin: auto;
   }
 }

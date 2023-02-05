@@ -748,3 +748,52 @@ a {
     margin: auto;
   }
 }
+
+/*Plans display*/
+
+.plans--display {
+  display: flex;
+  flex-direction: column;
+}
+
+.plans--display .plan {
+  margin: 5rem 2.2rem;
+}
+
+.plans--display .card {
+  max-width: 56.4rem;
+  margin: auto;
+}
+
+.plan {
+  transition: transform 0.3s ease-out;
+}
+
+.plan--left:hover {
+  transform: scale(1.05);
+}
+
+.plan--right:hover {
+  transform: scale(1.05);
+}
+
+.plan--middle {
+  transform: scale(1.07);
+}
+
+.plan--middle:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 1060px) {
+  .plans--display {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .plans--display .plan {
+    margin: 5rem 1.5rem;
+    width: 30%;
+  }
+}

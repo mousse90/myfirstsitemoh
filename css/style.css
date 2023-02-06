@@ -600,6 +600,8 @@ a {
 
 .block__header {
   text-align: center;
+  padding: 0 2rem;
+  margin-bottom: 4rem;
 }
 
 .block__heading {
@@ -822,11 +824,6 @@ a {
   .feature-element:nth-of-type(even) .feature__content {
     order: 2;
   }
-}
-
-.block__header {
-  text-align: center;
-  padding: 0 2rem;
 }
 
 /*Block-showcase*/

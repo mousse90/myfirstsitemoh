@@ -797,3 +797,31 @@ a {
     width: 30%;
   }
 }
+
+/*Block-features*/
+
+.feature-element {
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 2rem;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+.feature__heading {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .feature-element:nth-of-type(even) .feature__content {
+    order: 2;
+  }
+}
+
+.block__header {
+  text-align: center;
+  padding: 0 2rem;
+}

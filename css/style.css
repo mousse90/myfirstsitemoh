@@ -33,6 +33,10 @@ body {
   font-size: 2rem;
 }
 
+.body-config {
+  margin-top: 0;
+}
+
 h1,
 h2,
 h3 {
@@ -133,7 +137,6 @@ a {
 .list {
   list-style: none;
   padding-left: 0; /*remove the left padding of list that all browser apply per default*/
-  color: var(--color-heading);
 }
 
 .list--inline .list__item {
@@ -207,7 +210,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 3vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap; /*no wrap if we do not have enough space*/
@@ -293,6 +296,7 @@ a {
   border: 0;
   flex-grow: 1; /*take all the avalaible space*/
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -510,6 +514,22 @@ a {
 
   .testimonial-quote {
     margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial__image {
+    --padding-vertical-quote: 40px;
+    padding-left: var(--padding-vertical-quote);
+    padding-right: var(--padding-vertical-quote);
+  }
+
+  .testimonial__image > .icon-container {
+    position: absolute;
+    top: 4rem;
+    right: calc(
+      var(--padding-vertical-quote) - 32px
+    ); /*32px = width icon-container/2 */
   }
 }
 
@@ -732,6 +752,7 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-heading);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 6rem);
@@ -828,6 +849,11 @@ a {
 }
 
 /*Block-showcase*/
+
+.block-showcase {
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+}
 
 @media screen and (max-width: 768px) {
   .showcase--image {
